@@ -1,0 +1,27 @@
+#     ___  ___  __    ________  ________      
+#    |\  \|\  \|\  \ |\   ____\|\   ____\     
+#    \ \  \ \  \/  /|\ \  \___|\ \  \___|_    
+#  __ \ \  \ \   ___  \ \  \  __\ \_____  \   
+# |\  \\_\  \ \  \\ \  \ \  \|\  \|____|\  \  
+# \ \________\ \__\\ \__\ \_______\____\_\  \ 
+#  \|________|\|__| \|__|\|_______|\_________\
+#                                 \|_________|
+
+
+[font]
+# Font settings
+normal.family = "Courier New"  # Font family for normal text
+bold.family = "Courier New"  # Font family for bold text
+italic.family = "Courier New"  # Font family for italic text
+bold_italic.family = "Courier New"  # Font family for bold italic text
+size = 18.0  # Font size in points
+
+[colors]
+# Color settings
+primary.foreground = "#b9bac1"  # Text color
+primary.background = "#252526"  # Background color
+
+[window]
+# Window settings
+opacity = 0.95
+dynamic_title = true  # Enable dynamic title updates
