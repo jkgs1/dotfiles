@@ -1,0 +1,136 @@
+/*
+
+
+    ___  ___  __    ________  ________      
+   |\  \|\  \|\  \ |\   ____\|\   ____\     
+   \ \  \ \  \/  /|\ \  \___|\ \  \___|_    
+ __ \ \  \ \   ___  \ \  \  __\ \_____  \   
+|\  \\_\  \ \  \\ \  \ \  \|\  \|____|\  \  
+\ \________\ \__\\ \__\ \_______\____\_\  \ 
+ \|________|\|__| \|__|\|_______|\_________\
+                                \|_________|
+
+*/
+
+* {
+	blue: #1793d0;
+	darkgrey: #252526;
+	txtcolor: #b9bac1;
+	anchor: north;
+	location: center;
+	spacing: 2;
+}
+window {
+	background-color: @darkgrey;
+	padding: 5;
+	border: 1;
+}
+mainbox {
+	border: 0;
+	padding: 0;
+}
+message {
+	border: 2px 0px 0px ;
+	border-color: @blue;
+	padding: 1px;
+}
+textbox {
+	text-color: @blue;
+}
+listview {
+	fixed-height: 0;
+	border: 2px 0px 0px ;
+	border-color: @blue;
+	spacing: 3px;
+	scollbar: true;
+	padding: 10px 0px 0px ;
+}
+element {
+	padding: 2px;
+	highlight: bold;
+	border: 0;
+}
+element normal.normal {
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+}
+element normal.urgent {
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+}
+element normal.active {
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+}
+element selected.normal {
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+	text-padding: 2px;
+	border: 2px;
+	border-color: @blue;
+}
+element selected.urgent {
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+}
+element selected.active{
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+}
+element alternate.normal {
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+}
+element alternate.urgent {
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+}
+element alternate.active {
+	background-color: @darkgrey;
+	text-color: @txtcolor;
+}
+element-text {
+	background-color: inherit;
+	text-color: inherit;
+}
+scrollbar {
+	width: 4px;
+	padding: 0;
+	border: 0;
+	handle-width: 8px;
+	handle-color: @blue;
+}
+inputbar {
+	padding: 0.5em 1.0em ;
+	background-color: white;
+	index: 0;
+	spacing: 0;
+	border: 2px;
+	children: [ "prompt","textbox-prompt-colon","entry","case-indicator" ];
+}
+inputbar normal {
+	foreground-color: @blue;
+	background-color: transparent;
+}
+mode-switcher {
+	padding: 0.5em 1.0em ;
+	background-color: @blue;
+	index: 10;
+	border: 2px;
+}
+button selected {
+	background-color: @darkgrey;
+	text-color: @blue;
+}
+textbox-prompt-colon {
+	margin: 0px 0.3em 0.0em 0.0em ;
+	expand: false;
+	str: ":";
+	text-color: @blue;
+}
+error-message {
+	padding: 1.0em ;
+	background-color: red;
+	border: 2px;
+	text-color: black;	
+}
