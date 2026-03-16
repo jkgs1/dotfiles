@@ -1,0 +1,123 @@
+{
+  "margin-top": 10,
+  "layer": "top",
+  "modules-left": [
+    "mpris"
+  ],
+  "modules-center": [
+    "pulseaudio",
+    "pulseaudio/slider",
+    "hyprland/workspaces",
+    "clock",
+    "cpu",
+    "memory",
+    "custom/vpn"
+  ],
+  "clock": {
+    "format": "{:%A %Y-%m-%d %H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ebdbb2'><b>{}</b></span>",
+        "days": "<span color='#ebdbb2'><b>{}</b></span>",
+        "weeks": "<span color='#458588'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#cc241d'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click": "mode"
+    }
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "persistent-workspaces": {
+      "DP-1": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "on-click": "activate",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "active": "",
+      "default": ""
+    },
+    "sort-by-number": true
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": [
+      "Easy Effects Sink"
+    ]
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100
+  },
+  "mpris": {
+    "interval": 1,
+    "max-length": 40,
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} {artist} {title}",
+    "on-click-middle": "playerctl previous",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "scroll-step": 5.0,
+    "smooth-scrolling-threshold": 1,
+    "player-icons": {
+      "default": "",
+      "spotify": ""
+    },
+    "status-icons": {
+      "paused": "",
+      "playing": "",
+      "stopped": ""
+    },
+    "dynamic-order": [
+      "artist",
+      "title"
+    ],
+    "player": "spotify",
+    "ignored-players": [
+      "firefox, zen"
+    ],
+    "max-length": 40,
+  },
+  "cpu": {
+    "interval": 10,
+    "format": " {}%",
+    "max-length": 10
+  },
+  "memory": {
+    "interval": 30,
+    "format": " {used:0.1f}G/{total:0.1f}G"
+  },
+  "custom/vpn": {
+    "exec": "~/.config/waybar/scripts/vpn-status.sh",
+    "interval": 5,
+    "on-click": "com.protonvpn.www",
+    "return-type": "text"
+  }
+}

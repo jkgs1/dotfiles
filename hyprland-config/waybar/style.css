@@ -1,0 +1,93 @@
+@import "colors.css";
+
+* {
+    all: unset;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+.modules-left {
+    background-color: @bg0;
+    padding: 5px;
+    border-radius: 99px;
+    color: @fg;
+    margin-left: 1600;
+    min-width: 400px;
+}
+.modules-center {
+    background-color: @bg0;
+    padding: 5px;
+    border-radius: 99px;
+    color: @fg;
+}
+#mpris {
+    min-width: 400px;
+}
+#clock {
+    font-weight: 600;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#workspaces {
+    background-color: @gray;
+    padding-right: 8px;
+    padding-left: 3px;
+    border-radius: 99px;
+    font-size: 14px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#workspaces button {
+    padding: 10px;
+    min-width: 1rem;
+}
+
+#workspaces button.active {
+    min-width: 1rem;
+}
+#pulseaudio {
+    padding-left: 10;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+#pulseaudio-slider {
+    padding: 0;
+    margin: 0;
+    margin-right: 14px;
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    border-radius: 5px;
+    background: black;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background: @aqua;
+}
+#cpu {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+#memory {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+#custom-vpn {
+    padding-right: 10;
+    margin-left: 14px;
+    margin-right: 14px;
+}

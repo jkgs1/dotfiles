@@ -1,0 +1,28 @@
+#     ___  ___  __    ________  ________      
+#    |\  \|\  \|\  \ |\   ____\|\   ____\     
+#    \ \  \ \  \/  /|\ \  \___|\ \  \___|_    
+#  __ \ \  \ \   ___  \ \  \  __\ \_____  \   
+# |\  \\_\  \ \  \\ \  \ \  \|\  \|____|\  \  
+# \ \________\ \__\\ \__\ \_______\____\_\  \ 
+#  \|________|\|__| \|__|\|_______|\_________\
+#                                 \|_________|
+
+
+[font]
+# Font settings
+normal.family = "JetBrainsMono Nerd Font"  # Font family for normal text
+bold.family = "JetBrainsMono Nerd Font"  # Font family for bold text
+italic.family = "JetBrainsMono Nerd Font"  # Font family for italic text
+bold_italic.family = "JetBrainsMono Nerd Font"  # Font family for bold italic text
+size = 18.0  # Font size in points
+
+[colors]
+# Color settings
+primary.foreground = "#ebdbb3"  # Text color
+primary.background = "#282828"  # Background color
+
+[window]
+# Window settings
+startup_mode = "Maximized"
+dynamic_title = true  # Enable dynamic title updates
+opacity = 0.9
